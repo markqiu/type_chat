@@ -56,15 +56,18 @@ npm run build
 npm run package
 ```
 
-### Step four: use your lib in python
+### Step four: install and use your lib in python
 Look at details in examples directory.
-```python
-from type_chat import Sentiment
-
-greeter = Sentiment()
-content = greeter.get_file("input.txt")
-for l in content:
-    print(f"{l} ---> {greeter.get_response(l)}")
+```bash
+cd examples
+pip install -r requirements.txt --force-reinstall
+python chat.py
+```
+```text
+The sentiment is neutral
+The sentiment is positive
+The sentiment is positive
+The sentiment is neutral
 ```
 
 That's it. Enjoy it.
