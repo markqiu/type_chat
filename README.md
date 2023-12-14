@@ -69,8 +69,10 @@ The sentiment is positive
 The sentiment is positive
 The sentiment is neutral
 ```
-
 That's it. Enjoy it.
+
+## Acknowledgements
+@wleven :+1:
 
 ## License
 
