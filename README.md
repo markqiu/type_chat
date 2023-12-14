@@ -1,6 +1,6 @@
 # type_chat
 
-a python version of TypeChat taking a shortcut. It's in fact a typescript tool. Because you define you python lib interface by yourself and it will try to translate whatever you defined in typescript to python version.
+A python version of TypeChat taking a shortcut. It's in fact a typescript tool. Because you define you python lib interface by yourself and it will try to translate whatever you defined in typescript to python version.
 
 ## Installation
 
