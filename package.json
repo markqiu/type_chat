@@ -1,0 +1,49 @@
+{
+  "name": "type_chat",
+  "version": "1.0.0",
+  "description": "typechat python version from jsii",
+  "main": "index.js",
+  "scripts": {
+    "build": "jsii",
+    "build:watch": "jsii --watch",
+    "package": "jsii-pacmak",
+    "python": "cd examples && pip install -r requirements.txt --force-reinstall && python chat.py"
+  },
+  "keywords": [],
+  "author": {
+    "name": "markqiu",
+    "email": "qiucheng@jinniuai.com"
+  },
+  "repository": {
+    "url": "https://github.com/markqiu/gpt_academic",
+    "type": "git"
+  },
+  "license": "ISC",
+  "stability": "experimental",
+  "types": "index.d.ts",
+  "jsii": {
+    "outdir": "dist",
+    "versionFormat": "short",
+    "targets": {
+      "python": {
+        "module": "type_chat",
+        "distName": "type_chat"
+      }
+    }
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "typechat": "^0.0.10"
+  },
+  "bundledDependencies": [
+    "dotenv",
+    "typechat"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "copyfiles": "^2.4.1",
+    "jsii": "^5.2.41",
+    "jsii-pacmak": "^1.93.0",
+    "typescript": "^5.1.3"
+  }
+}

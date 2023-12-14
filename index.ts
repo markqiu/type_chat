@@ -1,19 +1,3 @@
-# type_chat
-
-a python version of TypeChat taking a shortcut. It's in fact a typescript tool. Because you define you python lib interface by yourself and it will try to translate whatever you defined in typescript to python version.
-
-## Installation
-
-```bash
-npm install
-```
-
-## Usage
-
-### Step one: define your lib interface in typescript
-Let's use an example of TypeChat: Sentiment
-
-```typescript
 import * as fs from "fs";
 import * as path from "path";
 import * as dotenv from "dotenv";
@@ -43,32 +27,14 @@ export class Sentiment {
   }
 }
 
-```
 
-### Step two: generate your lib interface in python
 
-```bash
-npm run build
-```
-
-### Step three: pack your python lib
-```bash
-npm run package
-```
-
-### Step four: use your lib in python
-Look at details in examples directory.
-```python
-from type_chat import Sentiment
-
-greeter = Sentiment()
-content = greeter.get_file("input.txt")
-for l in content:
-    print(f"{l} ---> {greeter.get_response(l)}")
-```
-
-That's it. Enjoy it.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+/** test demo */
+// async function test() {
+//     const sentiment = new Sentiment()
+//     const strs = sentiment.getFile("input.txt")
+//     for (let i = 0; i < strs.length; i++) {
+//         console.log(await sentiment.getResponse(strs[i]))
+//     }
+// }
+// test()
